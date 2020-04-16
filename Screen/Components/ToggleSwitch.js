@@ -1,22 +1,25 @@
 import React, { Component } from "react";
-import Toggle from 'react-toggle';
+import ToggleButton from 'react-bootstrap/ToggleButton';
 
 
-class ToggleSwitch extends Component {
-  constructor(){
-    this.state.baconIsReady: true
+const ToggleSwitch = () => {
+  return (
+    <>
+      
 
-  }
-  render() {
-    return (
-      <label>
-  <Toggle
-    defaultChecked={this.state.baconIsReady}
-    onChange={this.handleBaconChange} />
-  <span>Wrapper label tag</span>
-</label>
-    );
-  }
-}
+      <div className='custom-control custom-switch'>
+        <input
+          type='checkbox'
+          className='custom-control-input'
+          id='customSwitchesChecked'
+          defaultChecked
+        />
+        <label className='custom-control-label' htmlFor='customSwitchesChecked'>
+          Toggle element
+        </label>
+      </div>
+    </>
+  );
+};
 
 export default ToggleSwitch;
