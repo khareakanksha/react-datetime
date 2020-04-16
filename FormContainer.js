@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 
-import Header from "./Components/Header";
 import Datetime from "./Components/Datetime";
 import TextBox from "./Components/TextBox";
 import Button from "./Components/Button";
 import CheckBox from "./Components/CheckBox";
-import Footer from "./Components/Footer";
 import Radio from "./Components/Radio";
 import DropDown from "./Components/DropDown";
+import TextArea from "./Components/TextArea";
 
 class FormContainer extends Component {
   constructor(props) {
@@ -40,17 +39,16 @@ class FormContainer extends Component {
     return (
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div>
-          <Header/>
           <h3>Create Customer Account</h3>
           <TextBox/>
           <Radio/>
           <CheckBox/>
           <DropDown/>
           <Datetime/>
+          <TextArea/>
           <br/>
           <Button/>
           <br/>
-          <Footer/>
         </div>
       </form>
     );

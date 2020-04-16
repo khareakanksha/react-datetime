@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import StickyFooter from 'react-sticky-footer';
 

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import FormContainer from './FormContainer';
 import './style.css';
+import Header from "./Header";
+import Footer from "./Footer";
+
+
 
 
 class App extends Component {
@@ -11,7 +15,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <FormContainer />
+                <Header/>
+                  <FormContainer />
+                  <Footer/>
+
       </div>
     );
   }
