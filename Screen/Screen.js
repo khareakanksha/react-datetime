@@ -7,8 +7,9 @@ import CheckBox from "./Components/CheckBox";
 import Radio from "./Components/Radio";
 import DropDown from "./Components/DropDown";
 import TextArea from "./Components/TextArea";
+import ToggleSwitch from "./Components/ToggleSwitch";
 
-class FormContainer extends Component {
+class Screen extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,6 +45,7 @@ class FormContainer extends Component {
           <Radio/>
           <CheckBox/>
           <DropDown/>
+          <ToggleSwitch/>
           <Datetime/>
           <TextArea/>
           <br/>
@@ -55,5 +57,5 @@ class FormContainer extends Component {
   }
 }
 
-export default FormContainer; 
+export default Screen; 
 
