@@ -1,13 +1,7 @@
 import React, { Component } from "react";
+import { Router, Route, Link, browserHistory, IndexRoute } from "react-router";
 
-import Datetime from "./Components/Datetime";
-import TextBox from "./Components/TextBox";
-import Button from "./Components/Button";
-import CheckBox from "./Components/CheckBox";
-import Radio from "./Components/Radio";
-import DropDown from "./Components/DropDown";
-import TextArea from "./Components/TextArea";
-import ToggleSwitch from "./Components/ToggleSwitch";
+import TabsComp from "./Components/TabsComp";
 
 class Screen extends Component {
   constructor(props) {
@@ -20,7 +14,7 @@ class Screen extends Component {
         gender: "",
         expertise: "",
         about: ""
-      },
+      }
 
       // genderOptions: ["Male", "Female", "Others"],
       // skillOptions: ["Programming", "Development", "Design", "Testing"]
@@ -41,21 +35,11 @@ class Screen extends Component {
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div>
           <h3>Create Customer Account</h3>
-          <TextBox/>
-          <Radio/>
-          <CheckBox/>
-          <DropDown/>
-          <ToggleSwitch/>
-          <Datetime/>
-          <TextArea/>
-          <br/>
-          <Button/>
-          <br/>
+          <TabsComp />
         </div>
       </form>
     );
   }
 }
 
-export default Screen; 
-
+export default Screen;
