@@ -17,7 +17,7 @@ const FooterPage = () => {
     padding: "2rem"
     }}
 > 
-CopyRight @2018 TCS
+CopyRight @2018 
 </StickyFooter>
 </form>
   );

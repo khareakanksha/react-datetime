@@ -5,7 +5,7 @@ class Header extends Component {
     return (
           <nav class="navbar navbar-dark bg-primary">
             <a class="navbar-brand" href="#">
-              TCS MasterCraft
+               MasterCraft
             </a>
           </nav>
         
