@@ -7,10 +7,10 @@ class KalHeader extends Component {
       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
       this.state = { //state is by default an object
          students: [
-            { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
-            { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
-            { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
-            { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' }
+            { id: 1, Property: 'Wasif', Value: 21},
+            { id: 2, Property: 'Ali', Value: 19},
+            { id: 3, Property: 'Saad', Value: 16 },
+            { id: 4, Property: 'Asad', Value: 25}
          ]
       }
    }
@@ -24,13 +24,12 @@ renderTableHeader() {
 
     renderTableData() {
       return this.state.students.map((student, index) => {
-         const { id, name, age, email } = student //destructuring
+         const { id, Property, Value } = student //destructuring
          return (
             <tr key={id}>
                <td>{id}</td>
-               <td>{name}</td>
-               <td>{age}</td>
-               <td>{email}</td>
+               <td>{Property}</td>
+               <td>{Value}</td>
             </tr>
          )
       })
