@@ -40,7 +40,7 @@ renderTableHeader() {
       return (
         <form>
           <div>
-            <h1 id='title'>Kaledo Properties</h1>
+            <h1 id='title'>Kaledo Properties</h1>   
             <table id='students'>
                <tbody>
                   <tr>{this.renderTableHeader()}</tr>

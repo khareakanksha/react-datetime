@@ -5,7 +5,7 @@ import './style.css';
 import Header from "./Header";
 import Footer from "./Footer";
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
-import KalHeader from "./KaledoProperties/KalHeader";
+import FooterTab from "./FooterTabs/FooterTab";
 
 
 //------------Root file-----------------
@@ -18,7 +18,7 @@ class App extends Component {
       <div>
                 <Header/>
                   <Screen />
-                  <KalHeader/>
+                  <FooterTab/>
                   <Footer/>
 
       </div>
