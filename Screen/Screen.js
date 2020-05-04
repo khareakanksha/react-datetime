@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import { Router, Route, Link, browserHistory, IndexRoute } from "react-router";
 
-import TabsComp from "./Components/TabsComp";
+// import TabsComp from "./Components/TabsComp";
+
+import Button from "./Components/Button";
+import CheckBox from "./Components/CheckBox";
+import Radio from "./Components/Radio";
+import Datetime from "./Components/Datetime";
+import TextBox from "./Components/TextBox";
+import DropDown from "./Components/DropDown";
+import TextArea from "./Components/TextArea";
+import ToggleSwitch from "./Components/ToggleSwitch";
 
 class Screen extends Component {
   constructor(props) {
@@ -35,7 +44,17 @@ class Screen extends Component {
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div>
           <h3>Create Customer Account</h3>
-          <TabsComp />
+          <TextBox />
+          <Radio />
+          <CheckBox />
+          <DropDown />
+          <ToggleSwitch />
+          <Datetime />
+          <TextArea />
+          <br />
+          <Button />
+                    <br />
+
         </div>
       </form>
     );

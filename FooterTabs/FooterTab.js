@@ -3,18 +3,18 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
 import Console from "./Console/Console";
-import KalHeader from "./KaledoProperties/KalHeader";
+import KaledoProperties from "./KaledoProperties/KaledoProperties";
 
 
 class FooterTab extends Component {
   render() {
     return (
-      <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+      <Tabs>
         <Tab eventKey="Console" title="Console">
           <Console/>
         </Tab>
         <Tab eventKey="Kaledo Properties" title="Kaledo Properties">
-                    <KalHeader/>
+                    <KaledoProperties/>
         </Tab>
       </Tabs>
     );
