@@ -6,7 +6,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import FooterTab from "./FooterTabs/FooterTab";
-import SideBar from "./SideBar/SideBar";
 
 
 //------------Root file-----------------
@@ -18,7 +17,6 @@ class App extends Component {
     return ( 
       <div>
                   <Header/>
-                  <SideBar/>
                   <Screen />
                   <FooterTab/>
                   <Footer/>
