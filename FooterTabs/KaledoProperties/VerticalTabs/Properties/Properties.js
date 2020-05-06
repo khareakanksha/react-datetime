@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Properties.css";
 import ToggleBox from "./Behaviour/ToggleBox";
 import Vehicles from "./Behaviour/Vehicles";
+import Beh from "./Behaviour/Beh";
+
 
 class Properties extends Component {
   constructor(props) {
@@ -14,6 +16,7 @@ class Properties extends Component {
         { Property: "Asad", Value: 25 }
       ]
     };
+
   }
 
   renderTableHeader() {
@@ -39,12 +42,13 @@ class Properties extends Component {
     return (
       <form>
         <div>
-          <ToggleBox title="Show Vehicles">
-            <Vehicles />
-          </ToggleBox>
+          <Beh/>
           <table id="students">
             <tbody>
               <tr>{this.renderTableHeader()}</tr>
+              <ToggleBox title="Show Vehicles">
+            <Vehicles />
+          </ToggleBox>
               {this.renderTableData()}
             </tbody>
           </table>
