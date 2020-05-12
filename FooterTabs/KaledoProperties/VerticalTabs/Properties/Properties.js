@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Beh from "./Behaviour/Beh";
+import Behaviour from "./Behaviour/Behaviour";
 
 class Properties extends Component {
   render() {
     return (
       <form>
         <div>
-          <Beh />
+          <Behaviour/>
         </div>
       </form>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import "./Behavoiur.css";
 
-class Beh extends Component {
+class Behaviour extends Component {
   constructor() {
     super();
 
@@ -71,4 +71,4 @@ class Beh extends Component {
   }
 }
 
-export default Beh;
+export default Behaviour;
