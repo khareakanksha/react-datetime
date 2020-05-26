@@ -11,6 +11,7 @@ import TextBox from "./Components/TextBox";
 import DropDown from "./Components/DropDown";
 import TextArea from "./Components/TextArea";
 import ToggleSwitch from "./Components/ToggleSwitch";
+import Date from "./Components/Date";
 
 class Screen extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class Screen extends Component {
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div>
           <h3>Create Customer Account</h3>
+
           <TextBox />
           <Radio />
           <CheckBox />
