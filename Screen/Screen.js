@@ -48,7 +48,7 @@ class Screen extends Component {
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div>
           <h3>Create Customer Account</h3>
-          <Datetimebo/>
+        
           <Time/>
           <TextBox />
           <Radio />

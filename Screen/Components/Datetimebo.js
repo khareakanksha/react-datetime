@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import DateTimeField from "react-bootstrap-datetimepicker";
-import PropTypes from 'prop-types';
 
 
 class Datetimebo extends Component {

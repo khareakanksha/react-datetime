@@ -1,14 +1,22 @@
 import React, { Component } from "react";
 import {FormControl, FormGroup, ControlLabel, HelpBlock} from 'react-bootstrap';
 import DatePicker from 'react-bootstrap-date-picker';
+import PropTypes from "prop-types";
 
  
 class Date extends React.Component
 {
-  getInitialState(){
-    return {
-          date: new Date().toISOString(),
-    };
+  // getInitialState(){
+  //   return {
+  //         date: new Date().toISOString(),
+  //   };
+  // }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+    date: new Date().toLocaleString()
+  };
   }
 
   handleChange(value) {
